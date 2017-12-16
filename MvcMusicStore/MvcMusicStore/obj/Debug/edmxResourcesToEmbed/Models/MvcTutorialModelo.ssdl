@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FloraAndFaunaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PLANTA">
+    <Key>
+      <PropertyRef Name="idplanta" />
+    </Key>
+    <Property Name="idplanta" Type="int" Nullable="false" />
+    <Property Name="nombrePlanta" Type="varchar" MaxLength="50" />
+    <Property Name="especie" Type="varchar" MaxLength="50" />
+    <Property Name="flor" Type="varchar" MaxLength="50" />
+    <Property Name="familia" Type="varchar" MaxLength="50" />
+    <Property Name="nombrechileno" Type="varchar" MaxLength="50" />
+    <Property Name="nombreingles" Type="varchar" MaxLength="50" />
+    <Property Name="description" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityContainer Name="FloraAndFaunaModelStoreContainer">
+    <EntitySet Name="PLANTA" EntityType="Self.PLANTA" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

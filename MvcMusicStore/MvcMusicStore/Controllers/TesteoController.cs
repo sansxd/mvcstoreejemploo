@@ -7,9 +7,9 @@ using System.Web.Mvc;
 
 namespace MvcMusicStore.Controllers
 {
-    public class HomeController : Controller
+    public class TesteoController : Controller
     {
-        // GET: Home
+        // GET: Testeo
         public ActionResult Index()
         {
             FloraAndFaunaEntities db = new FloraAndFaunaEntities();

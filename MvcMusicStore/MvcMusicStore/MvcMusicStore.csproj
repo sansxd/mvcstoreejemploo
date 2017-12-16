@@ -147,6 +147,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StoreController.cs" />
+    <Compile Include="Controllers\TesteoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -172,6 +173,7 @@
     <Compile Include="Models\PLANTA.cs">
       <DependentUpon>MvcTutorialModelo.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\PlantaViewModel.cs" />
     <Compile Include="Models\SampleData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -197,6 +199,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Testeo\" />
     <Folder Include="_bin_deployableAssemblies\amd64\Microsoft.VC90.CRT\" />
     <Folder Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\" />
   </ItemGroup>

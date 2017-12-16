@@ -1,8 +1,24 @@
-﻿
+﻿@model MvcMusicStore.Models.PlantaViewModel
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Index</h2>
 <h2>This is the Home Page</h2>
+<div class="container" style="width:60%;margin-top:2%">
+    @if (Model !=null){
+        <ul class="list-group">
+            <li class="list-group-item-heading">informacion de plantas</li>
+            <li class="list-group-item">Id de planta :<b>@Model.idplanta</b></li>
+            <li class="list-group-item">Nombre de planta :<b>@Model.nombrePlanta</b></li>
+            <li class="list-group-item">Especie : <b>@Model.especie</b></li>
+            <li class="list-group-item">Flor :<b>@Model.flor</b></li>
+            <li class="list-group-item">Familia :<b>@Model.familia</b></li>
+            <li class="list-group-item">Nombre chileno :<b>@Model.nombrechileno</b></li>
+            <li class="list-group-item">Nombre ingles:<b>@Model.nombreingles</b></li>
+            <li class="list-group-item">Descripcion :<b>@Model.description</b></li>
 
+        </ul>
+    }
+
+</div>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FloraAndFaunaModelStoreContainer" CdmEntityContainer="FloraAndFaunaEntities">
+    <EntitySetMapping Name="PLANTAs">
+      <EntityTypeMapping TypeName="FloraAndFaunaModel.PLANTA">
+        <MappingFragment StoreEntitySet="PLANTA">
+          <ScalarProperty Name="idplanta" ColumnName="idplanta" />
+          <ScalarProperty Name="nombrePlanta" ColumnName="nombrePlanta" />
+          <ScalarProperty Name="especie" ColumnName="especie" />
+          <ScalarProperty Name="flor" ColumnName="flor" />
+          <ScalarProperty Name="familia" ColumnName="familia" />
+          <ScalarProperty Name="nombrechileno" ColumnName="nombrechileno" />
+          <ScalarProperty Name="nombreingles" ColumnName="nombreingles" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
